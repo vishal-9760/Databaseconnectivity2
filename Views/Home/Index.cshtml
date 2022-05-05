@@ -1,0 +1,23 @@
+﻿@model IEnumerable<Databaseconnectivity2.model.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table class=" table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Contact_number</th>
+        <th>Email</th>
+        </tr>
+    @foreach(var e in Model)
+            {
+                <tr>
+                    <td>@e.Id</td>
+                    <td>@e.Name</td>
+                    <td>@e.Contact_number</td>
+                    <td>@e.Email</td>
+                </tr>
+            }
+    </table>
